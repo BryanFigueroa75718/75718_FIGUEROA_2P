@@ -1,0 +1,8 @@
+﻿CORRECTO: tres mensajes y tres respuestas dentro de una sola conexion.
+CORRECTO: salir recibe despedida, termina el cliente y finaliza la atencion en el servidor.
+CORRECTO: un cliente sin enviar datos no impide atender a otro.
+CORRECTO: el fin de entrada cierra el cliente y el servidor detecta fin de flujo.
+CORRECTO: el servidor sigue escuchando despues de cerrar cada sesion.
+Los procesos de prueba se detienen al terminar la verificacion.
+CORRECTO: sin servidor el cliente no inicia la conversacion y termina con codigo 1.
+CORRECTO: al terminar las pruebas el puerto 8080 queda libre y no quedan procesos Java de prueba.

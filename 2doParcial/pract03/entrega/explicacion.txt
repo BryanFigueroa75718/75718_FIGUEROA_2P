@@ -1,0 +1,9 @@
+﻿EXPLICACION BREVE
+
+En el servidor original se leía un solo mensaje y después se cerraban los flujos. En el cliente se mandaba un mensaje fijo y luego una respuesta automática. Cambié el cliente para que lea lo que escribo en el teclado, lo envíe y muestre la respuesta del servidor.
+
+Agregué un ciclo while en el servidor para recibir varios mensajes. El cliente también repite el envío y la lectura de la respuesta. La conexión se mantiene porque el socket se crea una sola vez, antes del ciclo, y se reutiliza. PrintWriter tiene el envío automático activado para que cada println mande los datos sin dejarlos pendientes en el búfer.
+
+Si dejo de escribir, el hilo que atiende mi conexión espera en readLine(); no está repitiendo instrucciones constantemente. Otros clientes pueden continuar porque cada uno tiene su propio hilo. Si cierro la conexión normalmente, readLine() devuelve null y el ciclo termina. Una falla de red puede tardar en detectarse.
+
+Al escribir salir, el servidor contesta «Hasta luego» y ambos salen del ciclo. El try con recursos cierra los flujos y el socket. El hilo de ese cliente termina al finalizar el método, pero el servidor sigue esperando nuevas conexiones.
