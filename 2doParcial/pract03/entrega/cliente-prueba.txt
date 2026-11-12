@@ -1,0 +1,8 @@
+﻿Conectado a localhost:8080
+Escribe mensajes. Para terminar escribe salir.
+Tu: Servidor: Recibi: Hola servidor
+Tu: Servidor: Recibi: Este es mi segundo mensaje
+Tu: Servidor: Recibi: Seguimos en la misma conexion
+Tu: Servidor: Hasta luego.
+Cliente desconectado.
+
