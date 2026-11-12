@@ -1,0 +1,11 @@
+﻿Servidor escuchando en el puerto 8080...
+Cliente conectado: 127.0.0.1
+Cliente: Hola servidor
+Servidor: Recibi: Hola servidor
+Cliente: Este es mi segundo mensaje
+Servidor: Recibi: Este es mi segundo mensaje
+Cliente: Seguimos en la misma conexion
+Servidor: Recibi: Seguimos en la misma conexion
+Cliente: salir
+Servidor: Hasta luego.
+Sesion terminada. Conexion cerrada; finaliza el hilo del cliente.
