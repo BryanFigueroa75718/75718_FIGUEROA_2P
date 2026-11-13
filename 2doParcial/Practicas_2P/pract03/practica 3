@@ -1,0 +1,13 @@
+Gladys Candy Chumá Pérez - 70238
+
+Práctica 3
+
+En esta práctica se modificó el cliente y el servidor para que pudieran enviar y
+y recibir varios mensajes sin tener que conectarse de nuevo cada vez. Para esto
+utilizamos un ciclo while, que permite que ambos programas sigan comunicándose mientras
+la conexión esté abierta.
+
+Tambien se agregó la palabra salir para poder terminar la conexión correctamente.
+Cuando el cliente deja de enviar mensajes, el servidor se queda esperando a que llegue otro, sin
+cerrar la conexión. Si el cliente se desconecta, el servidor termmina la comunicación con ese cliente, pero
+sigue funcionando para recibir nuevas conexiones.
